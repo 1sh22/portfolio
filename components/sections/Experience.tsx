@@ -91,6 +91,7 @@ export default function Experience() {
                   padding: "26px 12px",
                   borderTop: index === 0 ? "1px solid #1f1f1f" : "none",
                   cursor: "pointer",
+                  WebkitTapHighlightColor: "transparent",
                 }}
               >
                 {/* Company */}
