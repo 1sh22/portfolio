@@ -7,7 +7,6 @@ export interface Project {
   num: string; name: string; desc: string; stack: string[];
   meta: string; github: string; live?: string; liveLabel?: string;
 }
-export interface Award { num: string; title: string; desc: string; year: string }
 
 const siteContent = {
   links: [
@@ -133,21 +132,6 @@ const siteContent = {
       github: "https://github.com/1sh22/emotional-intelligence-nlp",
     },
   ] as Project[],
-  writing: [] as { num: string; title: string; desc: string; date: string; href: string }[],
-  awards: [
-    {
-      num: "01",
-      title: "Builder — Thinkly Labs",
-      desc: "Co-founded an AI product studio; shipped multiple production SaaS tools used by early customers.",
-      year: "2024",
-    },
-    {
-      num: "02",
-      title: "Open Source Contributor",
-      desc: "Published AI and developer tooling projects on GitHub, including an LLM trained on the Bhagavad Gita.",
-      year: "2024",
-    },
-  ] as Award[],
   footerLinks: [
     { label: "email", href: "mailto:ishaanchoubey3@gmail.com" },
     { label: "github", href: "https://github.com/1sh22" },

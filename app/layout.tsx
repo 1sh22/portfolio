@@ -6,11 +6,11 @@ const BASE_URL = process.env.NEXT_PUBLIC_BASE_URL!
 
 export const metadata: Metadata = {
   title: "Ishaan Choubey",
-  description: "Personal portfolio of Ishaan Choubey — builder, full stack engineer, co-founder at Thinkly.",
+  description: "Portfolio",
   metadataBase: new URL(BASE_URL),
   openGraph: {
     title: "Ishaan Choubey",
-    description: "Personal portfolio of Ishaan Choubey — builder, full stack engineer, co-founder at Thinkly.",
+    description: "Portfolio",
     url: BASE_URL,
     siteName: "Ishaan Choubey",
     images: [
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Ishaan Choubey",
-    description: "Personal portfolio of Ishaan Choubey — builder, full stack engineer, co-founder at Thinkly.",
+    description: "Portfolio",
     images: ["/preview.png"],
   },
 }
