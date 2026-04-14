@@ -3,7 +3,8 @@ export const PAD = "clamp(40px, 10vw, 180px)"
 export const globalStyles = `
   @import url('https://fonts.googleapis.com/css2?family=Geist+Mono:wght@300;400;500&family=Instrument+Serif:ital@0;1&display=swap');
 
-  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+  *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+  a, button { outline: none; }
   html { scroll-behavior: smooth; }
 
   body {
