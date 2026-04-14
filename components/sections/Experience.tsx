@@ -53,7 +53,7 @@ function BulletList({ bullets, open }: { bullets: string[]; open: boolean }) {
               key={bullet}
               style={{
                 fontSize: 12,
-                color: "#888",
+                color: "#aaa",
                 paddingLeft: 16,
                 position: "relative",
                 marginBottom: 5,
@@ -99,7 +99,7 @@ export default function Experience() {
                   <div style={{ fontSize: 12, fontWeight: 500, color: "#d0d0d0", marginBottom: 3 }}>
                     {item.company}
                   </div>
-                  <div style={{ fontSize: 11, color: "#666" }}>{item.location}</div>
+                  <div style={{ fontSize: 11, color: "#888" }}>{item.location}</div>
                 </div>
 
                 {/* Role + bullets */}
@@ -119,7 +119,7 @@ export default function Experience() {
                 <div
                   style={{
                     fontSize: 11,
-                    color: "#666",
+                    color: "#999",
                     textAlign: "right",
                     paddingTop: 2,
                     whiteSpace: "nowrap",
@@ -127,7 +127,7 @@ export default function Experience() {
                 >
                   <div>{item.date}</div>
                   {item.type && (
-                    <div style={{ marginTop: 4, fontSize: 10, color: "#4a4a4a", letterSpacing: "0.04em" }}>
+                    <div style={{ marginTop: 4, fontSize: 10, color: "#777", letterSpacing: "0.04em" }}>
                       {item.type}
                     </div>
                   )}

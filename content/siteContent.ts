@@ -17,7 +17,7 @@ const siteContent = {
   ] as SiteLink[],
   aboutParagraphs: [
     "hey, i'm ishaan. i build full-stack products with a focus on clean architecture, fast iteration, and real user impact.",
-    "currently building, breaking, and figuring things out. exploring ai-native tooling, developer infrastructure. based in bengaluru.",
+    "currently building, breaking, and figuring things out. based in bengaluru.",
   ],
   aboutStack: [
     { label: "Languages",   items: ["TypeScript", "JavaScript", "Python", "C++", "SQL"] },
@@ -99,7 +99,7 @@ const siteContent = {
     {
       num: "01",
       name: "MediMitra",
-      desc: "full stack doctor appointment platform — credit-based scheduling, role-based access for patients, doctors and admins, real-time video.",
+      desc: "doctor appointment platform — credit-based scheduling, role-based access for patients, doctors and admins, real-time video.",
       stack: ["Next.js", "Neon", "Vonage"],
       meta: "Appointments · Video calls · Role-based access",
       github: "https://github.com/1sh22/medimitra",

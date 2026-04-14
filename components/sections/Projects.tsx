@@ -97,7 +97,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         {project.name}
       </div>
 
-      <div style={{ fontSize: 12, color: "#888", lineHeight: 1.75, marginBottom: 16 }}>
+      <div style={{ fontSize: 12, color: "#aaa", lineHeight: 1.75, marginBottom: 16 }}>
         {project.desc}
       </div>
 

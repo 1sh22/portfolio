@@ -17,7 +17,7 @@ export default function About() {
                 key={paragraph}
                 style={{
                   fontSize: 13,
-                  color: "#909090",
+                  color: "#b2b2b2",
                   lineHeight: 1.9,
                   marginBottom: 14,
                 }}
@@ -46,7 +46,7 @@ export default function About() {
                     fontSize: 10,
                     letterSpacing: "0.14em",
                     textTransform: "uppercase",
-                    color: "#555",
+                    color: "#888",
                     paddingTop: 3,
                     flexShrink: 0,
                   }}

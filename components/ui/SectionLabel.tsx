@@ -26,7 +26,7 @@ export default function SectionLabel({
           style={{
             fontSize: 10,
             fontFamily: "'Geist Mono', monospace",
-            color: "#666",
+            color: "#888",
             letterSpacing: "0.06em",
             flexShrink: 0,
           }}
@@ -35,13 +35,13 @@ export default function SectionLabel({
         </span>
       )}
       <span
-        style={{
-          fontSize: 10,
-          letterSpacing: "0.18em",
-          textTransform: "uppercase",
-          color: "#707070",
-          flexShrink: 0,
-        }}
+          style={{
+            fontSize: 10,
+            letterSpacing: "0.18em",
+            textTransform: "uppercase",
+            color: "#999",
+            flexShrink: 0,
+          }}
       >
         {children}
       </span>

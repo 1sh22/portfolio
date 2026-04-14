@@ -67,11 +67,11 @@ export default function Hero() {
             fontSize: 10,
             letterSpacing: "0.18em",
             textTransform: "uppercase",
-            color: "#707070",
+            color: "#999",
             paddingLeft: 0,
           }}
         >
-          tinkerer &amp; full stack engineer
+           full stack engineer
         </div>
       </div>
 
@@ -80,7 +80,7 @@ export default function Hero() {
         style={{
           maxWidth: "min(100%, 460px)",
           fontSize: 13,
-          color: "#909090",
+          color: "#b2b2b2",
           lineHeight: 1.85,
           marginBottom: 36,
           paddingLeft: 0,
@@ -89,7 +89,8 @@ export default function Hero() {
           textWrap: "pretty",
         }}
       >
-        full-stack engineer, backend at heart. i take products from zero to one - designing systems, building ai workflows and shipping fast.         obsessed with turning ideas into things that actually{"\u00A0"}exist.
+        always tinkering. i ship ai native products, from multi agent pipelines to production grade systems built{" "}
+        <span style={{ whiteSpace: "nowrap" }}>to scale.</span>
       </p>
 
       {/* Links */}
@@ -117,7 +118,7 @@ export default function Hero() {
                 fontSize: 11,
                 letterSpacing: "0.06em",
                 textTransform: "uppercase",
-                color: "#808080",
+                color: "#aaa",
                 textDecoration: "none",
                 padding: i === 0 ? "10px 14px 10px 0" : "10px 14px",
               }}

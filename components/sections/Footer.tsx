@@ -28,7 +28,7 @@ export default function Footer() {
             marginBottom: 5,
           }}
         >
-          ishaan choubey
+          Ishaan Choubey
         </div>
         <div
           style={{
