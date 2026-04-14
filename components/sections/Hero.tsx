@@ -96,14 +96,14 @@ export default function Hero() {
       <div
         style={{
           display: "flex",
-          flexWrap: "wrap",
+          flexWrap: "nowrap",
           gap: 0,
           opacity: 0,
           animation: "fadeUp 0.7s ease 0.4s forwards",
         }}
       >
         {links.map((link, i) => (
-          <React.Fragment key={link.label}>
+          <span key={link.label} style={{ display: "inline-flex", alignItems: "center", whiteSpace: "nowrap" }}>
             {i > 0 && (
               <span style={{ color: "#484848", padding: "10px 0", userSelect: "none" }}>
                 /
@@ -119,13 +119,13 @@ export default function Hero() {
                 textTransform: "uppercase",
                 color: "#808080",
                 textDecoration: "none",
-                padding: "10px 14px",
+                padding: i === 0 ? "10px 14px 10px 0" : "10px 14px",
               }}
               className="hero-link"
             >
               {link.label}
             </a>
-          </React.Fragment>
+          </span>
         ))}
       </div>
     </section>
