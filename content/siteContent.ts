@@ -21,9 +21,9 @@ const siteContent = {
   ],
   aboutStack: [
     { label: "Languages",   items: ["TypeScript", "JavaScript", "Python", "C++", "SQL"] },
-    { label: "Frameworks",  items: ["Next.js", "React", "Node.js", "Express.js", "FastAPI", "Flask", "LangChain", "Scikit-learn", "PyTorch", "HuggingFace"] },
-    { label: "Databases",   items: ["PostgreSQL", "Supabase", "MongoDB"] },
-    { label: "Tools",       items: ["Vercel", "GitHub", "Docker", "GCP"] },
+    { label: "Frameworks",  items: ["Next.js", "React", "Node.js", "Express.js", "FastAPI", "Flask", "LangChain", "Scikit-learn", "PyTorch"] },
+    { label: "Databases",   items: ["PostgreSQL", "Supabase", "Drizzle ORM", "MongoDB"] },
+    { label: "Tools",       items: ["Vercel", "GitHub", "HuggingFace", "Docker", "GCP"] },
   ],
   experience: [
     {

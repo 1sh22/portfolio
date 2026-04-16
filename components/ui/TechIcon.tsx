@@ -7,6 +7,7 @@ import {
   SiJavascript, SiCplusplus, SiGooglecloud, SiGithub, SiExpress,
   SiPandas, SiPlotly, SiAnthropic, SiOpenai, SiRedis,
   SiOpencv, SiNumpy, SiKeras, SiVonage,
+  SiDrizzle,
 } from "react-icons/si"
 import { SiHuggingface } from "react-icons/si"
 import { FaAws, FaDatabase } from "react-icons/fa"
@@ -42,6 +43,9 @@ const techIconMap: Record<string, IconEntry> = {
   pytorch:        { Icon: SiPytorch,      color: "#c8604f" },
   huggingface:    { Icon: SiHuggingface,  color: "#c8a84f" },
   django:         { Icon: SiDjango,       color: "#3f6e5c" },
+  drizzle:        { Icon: SiDrizzle,      color: "#2f6f9f" },
+  "drizzle orm":  { Icon: SiDrizzle,      color: "#2f6f9f" },
+  drizzleorm:     { Icon: SiDrizzle,      color: "#2f6f9f" },
   redis:          { Icon: SiRedis,        color: "#b84f4f" },
   opencv:         { Icon: SiOpencv,       color: "#4f8a5a" },
   numpy:          { Icon: SiNumpy,        color: "#4f6fb8" },
@@ -68,7 +72,8 @@ const techIconMap: Record<string, IconEntry> = {
 }
 
 function resolveIcon(label: string): IconEntry | null {
-  return techIconMap[label.trim().toLowerCase()] ?? null
+  const key = label.trim().toLowerCase().replace(/\s+/g, " ")
+  return techIconMap[key] ?? null
 }
 
 export default function TechIcon({ label, size = 11 }: { label: string; size?: number }) {
