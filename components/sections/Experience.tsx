@@ -27,44 +27,63 @@ function renderBulletText(bullet: string) {
   )
 }
 
-function BulletList({ bullets, open }: { bullets: string[]; open: boolean }) {
+function BulletList({ bullets }: { bullets: string[] }) {
+  if (bullets.length === 0) return null
+
+  return (
+    <ul
+      style={{
+        listStyle: "none",
+        padding: 0,
+        margin: 0,
+      }}
+    >
+      {bullets.map((bullet) => (
+        <li
+          key={bullet}
+          style={{
+            fontSize: 12,
+            color: "#aaa",
+            paddingLeft: 16,
+            position: "relative",
+            marginBottom: 5,
+            lineHeight: 1.65,
+          }}
+        >
+          <span style={{ position: "absolute", left: 0, color: "#555", fontSize: 11, top: 2 }}>›</span>
+          {renderBulletText(bullet)}
+        </li>
+      ))}
+    </ul>
+  )
+}
+
+function ExperienceDetails({
+  bullets,
+  open,
+}: {
+  bullets: string[]
+  open: boolean
+}) {
   return (
     <div
       style={{
         display: "grid",
         gridTemplateRows: open ? "1fr" : "0fr",
         transition: "grid-template-rows 0.32s cubic-bezier(0.4,0,0.2,1)",
-        marginBottom: open ? 12 : 0,
       }}
     >
       <div style={{ overflow: "hidden" }}>
-        <ul
+        <div
           style={{
-            listStyle: "none",
-            padding: 0,
-            margin: 0,
             opacity: open ? 1 : 0,
             transform: open ? "translateY(0)" : "translateY(-6px)",
             transition: "opacity 0.25s ease, transform 0.3s cubic-bezier(0.4,0,0.2,1)",
+            paddingBottom: open ? 2 : 0,
           }}
         >
-          {bullets.map((bullet) => (
-            <li
-              key={bullet}
-              style={{
-                fontSize: 12,
-                color: "#aaa",
-                paddingLeft: 16,
-                position: "relative",
-                marginBottom: 5,
-                lineHeight: 1.65,
-              }}
-            >
-              <span style={{ position: "absolute", left: 0, color: "#555", fontSize: 11, top: 2 }}>›</span>
-              {renderBulletText(bullet)}
-            </li>
-          ))}
-        </ul>
+          <BulletList bullets={bullets} />
+        </div>
       </div>
     </div>
   )
@@ -75,7 +94,7 @@ export default function Experience() {
 
   return (
     <section id="experience">
-      <SectionLabel num="01" paddingTop={56}>Experience</SectionLabel>
+      <SectionLabel num="01" paddingTop={56} marginBottom={20}>Experience</SectionLabel>
       <div style={{ paddingBottom: 80 }}>
         {experience.map((item, index) => {
           const isOpen = expandedIndex === index
@@ -83,13 +102,21 @@ export default function Experience() {
             <FadeIn key={item.company} delay={index * 55}>
               <div
                 className="exp-row"
+                role="button"
+                tabIndex={0}
+                aria-expanded={isOpen}
                 onClick={() => setExpandedIndex((prev) => (prev === index ? null : index))}
+                onKeyDown={(event) => {
+                  if (event.key === "Enter" || event.key === " ") {
+                    event.preventDefault()
+                    setExpandedIndex((prev) => (prev === index ? null : index))
+                  }
+                }}
                 style={{
                   display: "grid",
                   gridTemplateColumns: "160px 1fr 140px",
                   gap: 28,
                   padding: "26px 12px",
-                  borderTop: index === 0 ? "1px solid #1f1f1f" : "none",
                   cursor: "pointer",
                   WebkitTapHighlightColor: "transparent",
                 }}
@@ -107,7 +134,7 @@ export default function Experience() {
                   <div style={{ fontSize: 12, color: "#c0c0c0", marginBottom: 12, letterSpacing: "0.01em" }}>
                     {item.role}
                   </div>
-                  <BulletList bullets={item.bullets} open={isOpen} />
+                  <ExperienceDetails bullets={item.bullets} open={isOpen} />
                   <div style={{ display: "flex", flexWrap: "wrap", gap: 4 }}>
                     {item.stack.map((s) => (
                       <Pill key={s}>{s}</Pill>

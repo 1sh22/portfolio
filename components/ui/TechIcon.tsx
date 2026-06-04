@@ -12,6 +12,7 @@ import {
 import { SiHuggingface } from "react-icons/si"
 import { FaAws, FaDatabase } from "react-icons/fa"
 import { IconType } from "react-icons"
+import { VscMcp } from "react-icons/vsc"
 
 type IconEntry =
   | { kind?: "icon"; Icon: IconType; color: string }
@@ -51,9 +52,12 @@ const techIconMap: Record<string, IconEntry> = {
   numpy:          { Icon: SiNumpy,        color: "#4f6fb8" },
   yolov8:         { Icon: SiPython,       color: "#8a8a8a" },
   labelimg:       { Icon: SiPython,       color: "#8a8a8a" },
-  aws:            { Icon: FaAws,          color: "#c89447" },
+  aws:            { Icon: FaAws,          color: "#cfcfcf" },
   gcp:            { Icon: SiGooglecloud,  color: "#4f7db8" },
   python:         { Icon: SiPython,       color: "#53799f" },
+  adk:            { kind: "img", src: "https://adk.dev/assets/agent-development-kit.png", imgStyle: { filter: "brightness(0.9) saturate(0.9)" } },
+  "google adk":   { kind: "img", src: "https://adk.dev/assets/agent-development-kit.png", imgStyle: { filter: "brightness(0.9) saturate(0.9)" } },
+  mcp:            { Icon: VscMcp,          color: "#cfcfcf" },
   supabase:       { Icon: SiSupabase,     color: "#5ab286" },
   rag:            { Icon: SiLangchain,    color: "#9b8ec4" },
   "claude api":   { Icon: SiAnthropic,   color: "#c8a87a" },
@@ -84,6 +88,7 @@ export default function TechIcon({ label, size = 11 }: { label: string; size?: n
     return (
       <img
         src={match.src}
+        alt=""
         aria-hidden="true"
         width={size}
         height={size}

@@ -20,16 +20,25 @@ const siteContent = {
     "currently building, breaking, and figuring things out. based in bengaluru.",
   ],
   aboutStack: [
-    { label: "Languages",   items: ["TypeScript", "JavaScript", "Python", "C++", "SQL"] },
+    { label: "Languages",   items: ["Python", "TypeScript", "JavaScript", "C++", "SQL"] },
     { label: "Frameworks",  items: ["Next.js", "React", "Node.js", "Express.js", "FastAPI", "Flask", "LangChain", "Scikit-learn", "PyTorch"] },
     { label: "Databases",   items: ["PostgreSQL", "Supabase", "Drizzle ORM", "MongoDB"] },
-    { label: "Tools",       items: ["Vercel", "GitHub", "HuggingFace", "Docker", "GCP"] },
+    { label: "Tools",       items: ["Vercel", "GitHub", "HuggingFace", "Docker", "GCP", "AWS"] },
   ],
   experience: [
     {
+      company: "Poppulo",
+      role: "Machine Learning Engineer",
+      date: "May 2026 – Present",
+      location: "Bengaluru, IN",
+      type: "Full-time",
+      bullets: ["Building AI agents."],
+      stack: ["Python", "Google ADK", "MCP", "AWS"],
+    },
+    {
       company: "ThinklyLabs",
       role: "Founding Engineer",
-      date: "Sept 2025 – Present",
+      date: "Sept 2025 – Apr 2026",
       location: "Remote",
       type: "Full-time",
       bullets: [

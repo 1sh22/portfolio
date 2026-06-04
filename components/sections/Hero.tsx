@@ -71,7 +71,7 @@ export default function Hero() {
             paddingLeft: 0,
           }}
         >
-           full stack engineer
+           software engineer
         </div>
       </div>
 
@@ -89,7 +89,7 @@ export default function Hero() {
           textWrap: "pretty",
         }}
       >
-        always tinkering. i ship ai native products, from multi agent pipelines to production grade systems built{" "}
+        always tinkering. i ship ai native products, from multi agent tools to production grade systems built{" "}
         <span style={{ whiteSpace: "nowrap" }}>to scale.</span>
       </p>
 
