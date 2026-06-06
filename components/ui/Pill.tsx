@@ -8,7 +8,7 @@ export default function Pill({ children }: { children: ReactNode }) {
         fontSize: 10,
         letterSpacing: "0.05em",
         textTransform: "uppercase",
-        color: "#aaa",
+        color: "#c8c8c8",
         background: "#1a1a1a",
         border: "1px solid #2a2a2a",
         padding: "3px 8px",

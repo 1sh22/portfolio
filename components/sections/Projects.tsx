@@ -35,7 +35,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
 
       {/* Header */}
       <div style={{ display: "flex", justifyContent: "space-between", alignItems: "flex-start", marginBottom: 14 }}>
-        <span style={{ fontSize: 10, color: "#666", letterSpacing: "0.08em" }}>
+        <span style={{ fontSize: 10, color: "#a6a6a6", letterSpacing: "0.08em" }}>
           {project.num}
         </span>
         <div style={{ display: "flex", gap: 14 }}>
@@ -46,7 +46,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               rel="noreferrer"
               style={{
               fontSize: 11,
-              color: "#666",
+              color: "#a6a6a6",
               textDecoration: "none",
               display: "flex",
               alignItems: "center",
@@ -54,7 +54,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               transition: "color 0.2s",
             }}
             onMouseEnter={(e) => { e.currentTarget.style.color = "#d0d0d0" }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = "#666" }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = "#a6a6a6" }}
           >
             {project.liveLabel ?? "live"}
               <span style={{ display: "inline-block", transition: "transform 0.2s", transform: hovered ? "translate(2px,-2px)" : "none" }}>↗</span>
@@ -66,7 +66,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
             rel="noreferrer"
             style={{
               fontSize: 11,
-              color: "#666",
+              color: "#a6a6a6",
               textDecoration: "none",
               display: "flex",
               alignItems: "center",
@@ -74,7 +74,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
               transition: "color 0.2s",
             }}
             onMouseEnter={(e) => { e.currentTarget.style.color = "#d0d0d0" }}
-            onMouseLeave={(e) => { e.currentTarget.style.color = "#666" }}
+            onMouseLeave={(e) => { e.currentTarget.style.color = "#a6a6a6" }}
           >
             github
             <span style={{ display: "inline-block", transition: "transform 0.2s", transform: hovered ? "translate(2px,-2px)" : "none" }}>↗</span>
@@ -88,7 +88,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
           fontSize: 16,
           fontFamily: "'Geist Mono', monospace",
           letterSpacing: "-0.02em",
-          color: "#d8d8d8",
+          color: "#e2e2e2",
           marginBottom: 10,
           lineHeight: 1.2,
           fontWeight: 400,
@@ -97,7 +97,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         {project.name}
       </div>
 
-      <div style={{ fontSize: 12, color: "#aaa", lineHeight: 1.75, marginBottom: 16 }}>
+      <div style={{ fontSize: 12, color: "#c8c8c8", lineHeight: 1.75, marginBottom: 16 }}>
         {project.desc}
       </div>
 
@@ -107,7 +107,7 @@ function ProjectCard({ project, index }: { project: Project; index: number }) {
         ))}
       </div>
 
-      <div style={{ fontSize: 10, color: "#666", letterSpacing: "0.04em" }}>
+      <div style={{ fontSize: 10, color: "#a6a6a6", letterSpacing: "0.04em" }}>
         {project.meta}
       </div>
     </div>

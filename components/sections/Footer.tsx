@@ -23,7 +23,7 @@ export default function Footer() {
             fontFamily: "'Instrument Serif', Georgia, serif",
             fontSize: "clamp(22px, 2.8vw, 32px)",
             letterSpacing: "-0.03em",
-            color: "#c0c0c0",
+            color: "#e2e2e2",
             fontWeight: 400,
             marginBottom: 5,
           }}
@@ -33,7 +33,7 @@ export default function Footer() {
         <div
           style={{
             fontSize: 10,
-            color: "#666",
+            color: "#a6a6a6",
             letterSpacing: "0.08em",
             textTransform: "uppercase",
           }}

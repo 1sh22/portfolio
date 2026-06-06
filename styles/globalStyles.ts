@@ -8,8 +8,8 @@ export const globalStyles = `
   html { scroll-behavior: smooth; }
 
   body {
-    background: #141414;
-    color: #efefef;
+    background: #101010;
+    color: #fafafa;
     font-family: 'Geist Mono', 'Courier New', monospace;
     font-size: 13px;
     font-weight: 400;
@@ -18,7 +18,7 @@ export const globalStyles = `
     overflow-x: hidden;
   }
 
-  ::selection { background: #fff; color: #141414; }
+  ::selection { background: #fff; color: #101010; }
 
   @keyframes fadeUp {
     from { opacity: 0; transform: translateY(8px); }
@@ -79,11 +79,11 @@ export const globalStyles = `
   .exp-row:hover { background: #191919; }
 
   .footer-link {
-    color: #808080 !important;
+    color: #a6a6a6 !important;
     text-decoration: none;
     transition: color 0.2s;
   }
-  .footer-link:hover { color: #efefef !important; }
+  .footer-link:hover { color: #fafafa !important; }
 
   .section-line {
     flex: 1;

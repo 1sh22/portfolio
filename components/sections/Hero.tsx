@@ -54,7 +54,7 @@ export default function Hero() {
               fontSize: "clamp(32px, 3.6vw, 42px)",
               fontWeight: 400,
               letterSpacing: "-0.03em",
-              color: "#efefef",
+              color: "#fafafa",
               lineHeight: 1,
               whiteSpace: "nowrap",
             }}
@@ -67,7 +67,7 @@ export default function Hero() {
             fontSize: 10,
             letterSpacing: "0.18em",
             textTransform: "uppercase",
-            color: "#999",
+            color: "#a6a6a6",
             paddingLeft: 0,
           }}
         >
@@ -80,7 +80,7 @@ export default function Hero() {
         style={{
           maxWidth: "min(100%, 460px)",
           fontSize: 13,
-          color: "#b2b2b2",
+          color: "#c8c8c8",
           lineHeight: 1.85,
           marginBottom: 36,
           paddingLeft: 0,
@@ -118,7 +118,7 @@ export default function Hero() {
                 fontSize: 11,
                 letterSpacing: "0.06em",
                 textTransform: "uppercase",
-                color: "#aaa",
+                color: "#c8c8c8",
                 textDecoration: "none",
                 padding: i === 0 ? "10px 14px 10px 0" : "10px 14px",
               }}
