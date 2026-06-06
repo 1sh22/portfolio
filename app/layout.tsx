@@ -15,7 +15,7 @@ export const metadata: Metadata = {
     siteName: "Ishaan Choubey",
     images: [
       {
-        url: "/preview.png",
+        url: "/preview2.png",
         width: 1200,
         height: 630,
         alt: "Ishaan Choubey — Portfolio",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "Ishaan Choubey",
     description: "Portfolio",
-    images: ["/preview.png"],
+    images: ["/preview2.png"],
   },
 }
 
