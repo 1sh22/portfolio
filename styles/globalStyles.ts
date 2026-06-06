@@ -53,12 +53,12 @@ export const globalStyles = `
   .hero-link:hover::after { transform: scaleX(1); }
 
   .proj-card {
-    background: #1a1a1a;
+    background: #181818;
     border: 1px solid #252525;
     transition: border-color 0.25s, background 0.2s;
   }
   .proj-card:hover {
-    background: #1e1e1e;
+    background: #1c1c1c;
     border-color: #444;
   }
   .proj-card .proj-accent-bar {
@@ -76,7 +76,7 @@ export const globalStyles = `
     border-bottom: 1px solid #1f1f1f;
     transition: background 0.15s;
   }
-  .exp-row:hover { background: #191919; }
+  .exp-row:hover { background: #171717; }
 
   .footer-link {
     color: #a6a6a6 !important;
