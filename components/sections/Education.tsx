@@ -20,18 +20,18 @@ export default function Education() {
         >
           {/* Institution */}
           <div>
-            <div style={{ fontSize: 12, fontWeight: 500, color: "#e2e2e2", marginBottom: 3 }}>
+            <div style={{ fontSize: 12, fontWeight: 500, color: "#ddd4c8", marginBottom: 3 }}>
               Vidyavardhaka College of Engineering
             </div>
-            <div style={{ fontSize: 11, color: "#a6a6a6" }}>Mysore, IN</div>
+            <div style={{ fontSize: 11, color: "#aba295" }}>Mysore, IN</div>
           </div>
 
           {/* Degree */}
           <div>
-            <div style={{ fontSize: 12, color: "#e2e2e2", marginBottom: 6, letterSpacing: "0.01em" }}>
+            <div style={{ fontSize: 12, color: "#ddd4c8", marginBottom: 6, letterSpacing: "0.01em" }}>
               B.E Computer Science (AI&ML)
             </div>
-            <div style={{ fontSize: 11, color: "#a6a6a6" }}>CGPA: 8.4</div>
+            <div style={{ fontSize: 11, color: "#aba295" }}>CGPA: 8.4</div>
           </div>
 
           {/* Date */}
@@ -39,7 +39,7 @@ export default function Education() {
             className="edu-date"
             style={{
               fontSize: 11,
-              color: "#a6a6a6",
+              color: "#aba295",
               textAlign: "right",
               paddingTop: 2,
               whiteSpace: "nowrap",

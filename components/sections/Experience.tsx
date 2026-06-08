@@ -19,7 +19,7 @@ function renderBulletText(bullet: string) {
   return (
     <>
       {before}
-      <a href={url} target="_blank" rel="noreferrer" style={{ color: "#c8c8c8" }}>
+      <a href={url} target="_blank" rel="noreferrer" style={{ color: "#c6bcb0" }}>
         {linkText}
       </a>
       {after}
@@ -43,7 +43,7 @@ function BulletList({ bullets }: { bullets: string[] }) {
           key={bullet}
           style={{
             fontSize: 12,
-            color: "#c8c8c8",
+            color: "#c6bcb0",
             paddingLeft: 16,
             position: "relative",
             marginBottom: 5,
@@ -123,15 +123,15 @@ export default function Experience() {
               >
                 {/* Company */}
                 <div>
-                  <div style={{ fontSize: 12, fontWeight: 500, color: "#e2e2e2", marginBottom: 3 }}>
+                  <div style={{ fontSize: 12, fontWeight: 500, color: "#ddd4c8", marginBottom: 3 }}>
                     {item.company}
                   </div>
-                  <div style={{ fontSize: 11, color: "#a6a6a6" }}>{item.location}</div>
+                  <div style={{ fontSize: 11, color: "#aba295" }}>{item.location}</div>
                 </div>
 
                 {/* Role + bullets */}
                 <div>
-                  <div style={{ fontSize: 12, color: "#e2e2e2", marginBottom: 12, letterSpacing: "0.01em" }}>
+                  <div style={{ fontSize: 12, color: "#ddd4c8", marginBottom: 12, letterSpacing: "0.01em" }}>
                     {item.role}
                   </div>
                   <ExperienceDetails bullets={item.bullets} open={isOpen} />
@@ -146,7 +146,7 @@ export default function Experience() {
                 <div
                   style={{
                     fontSize: 11,
-                    color: "#a6a6a6",
+                    color: "#aba295",
                     textAlign: "right",
                     paddingTop: 2,
                     whiteSpace: "nowrap",
@@ -154,7 +154,7 @@ export default function Experience() {
                 >
                   <div>{item.date}</div>
                   {item.type && (
-                    <div style={{ marginTop: 4, fontSize: 10, color: "#a6a6a6", letterSpacing: "0.04em" }}>
+                    <div style={{ marginTop: 4, fontSize: 10, color: "#aba295", letterSpacing: "0.04em" }}>
                       {item.type}
                     </div>
                   )}

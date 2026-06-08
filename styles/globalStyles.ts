@@ -9,7 +9,7 @@ export const globalStyles = `
 
   body {
     background: #101010;
-    color: #fafafa;
+    color: #f1ede7;
     font-family: 'Geist Mono', 'Courier New', monospace;
     font-size: 13px;
     font-weight: 400;
@@ -44,12 +44,12 @@ export const globalStyles = `
     position: absolute;
     bottom: 6px; left: 0; right: 0;
     height: 1px;
-    background: #efefef;
+    background: #e7dfd4;
     transform: scaleX(0);
     transform-origin: left;
     transition: transform 0.25s ease;
   }
-  .hero-link:hover { color: #fff !important; }
+  .hero-link:hover { color: #e7dfd4 !important; }
   .hero-link:hover::after { transform: scaleX(1); }
 
   .proj-card {
@@ -65,7 +65,7 @@ export const globalStyles = `
     position: absolute;
     left: 0; top: 0; bottom: 0;
     width: 1px;
-    background: #efefef;
+    background: #e7dfd4;
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 0.3s ease;
@@ -79,11 +79,11 @@ export const globalStyles = `
   .exp-row:hover { background: #171717; }
 
   .footer-link {
-    color: #a6a6a6 !important;
+    color: #aba295 !important;
     text-decoration: none;
     transition: color 0.2s;
   }
-  .footer-link:hover { color: #fafafa !important; }
+  .footer-link:hover { color: #e7dfd4 !important; }
 
   .section-line {
     flex: 1;
